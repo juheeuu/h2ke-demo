@@ -82,7 +82,7 @@ function App() {
     <div style={{'display': 'flex'}}> 
         <ProSidebar>
           <Menu iconShape="square">
-            <Link to="/">
+            <Link to="/h2ke-demo">
               <MenuItem >README</MenuItem>
             </Link>
               {
@@ -91,7 +91,7 @@ function App() {
                       {
                         year_all[i+1].map((key) => (
                           <MenuItem>
-                            <Link to={`${i+1}_${key}`}> Year {key}</Link>
+                            <Link to={`/h2ke-demo/${i+1}_${key}`}> Year {key}</Link>
                           </MenuItem>
                         ))
                       }
@@ -103,12 +103,12 @@ function App() {
         <ScrollToTop>
       <Routes>
         
-        <Route exact path="/" element={<IntroView/>}/>
+        <Route exact path="/h2ke-demo/" element={<IntroView/>}/>
         {
           data_all.map((e, i )=> (
                 Object.keys(e).map((key, j) => (
                   <Route 
-                      path={`${i+1}_${key}`} 
+                      path={`/h2ke-demo/${i+1}_${key}`} 
                       element={<YearView 
                                   king_name={king_all[i]}
                                   volume_n={key}
@@ -122,7 +122,7 @@ function App() {
           king_all.map((e, i) => 
             year_all[i+1].map(key => 
                 <Route 
-                  path={`${i+1}_${key}`} 
+                  path={`/h2ke-demo/${i+1}_${key}`} 
                   element={
                     <YearView 
                       king_name={e}
