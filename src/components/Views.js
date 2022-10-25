@@ -221,7 +221,7 @@ export function YearView(props) {
 
     useEffect (()=>{
         getData()
-      })
+      }, [data])
 
     function convertMonth(month) {
         const month_info = {
