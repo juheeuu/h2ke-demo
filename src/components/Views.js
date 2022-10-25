@@ -231,7 +231,6 @@ export function IntroView(props) {
 export function YearView(props) {
     const [data, setData] = useState({})
     const getData = () => {
-        console.log('getData')
         fetch(`data/${props.king_n}-${props.year_n}.json`, {
             headers: {
                 'Content-Type': 'application/json',
@@ -246,7 +245,7 @@ export function YearView(props) {
 
     useEffect(() => {
         getData()
-    }, [data])
+    }, [props.king_n, props.year_n])
 
     function convertMonth(month) {
         const month_info = {
