@@ -51,15 +51,15 @@ function App() {
             <header style={{ boxShadow: '0 4px 12px #080a2939' }}>
                 <div style={styles.topNavbar}>2022 EMNLP</div>
                 {/* <div style={styles.topNavbarContents}>
-        <a 
-          href="./" 
+        <a
+          href="./"
           style={styles.topNavbarlogoText}
         >
-          <div> 
-            2022 <br />  EMNLP  
+          <div>
+            2022 <br />  EMNLP
           </div>
         </a>
-        
+
             <div style={styles.topNavbarElemText}>
               Code
             </div>
@@ -80,9 +80,9 @@ function App() {
                                     <MenuItem>README</MenuItem>
                                 </Link>
                                 {king_all.map((e, i) => (
-                                    <SubMenu title={`${e}`}>
-                                        {year_all[i + 1].map((key) => (
-                                            <MenuItem>
+                                    <SubMenu title={`${e}`} key={`${i}-${e}`}>
+                                        {year_all[i + 1].map((key, j) => (
+                                            <MenuItem key={`${i}-${key}-${j}`}>
                                                 <Link
                                                     to={`/h2ke-demo/${
                                                         i + 1
