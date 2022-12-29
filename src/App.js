@@ -68,8 +68,8 @@ function App() {
             <body style={styles.body}>
                 <div style={styles.title}>
                     <b>
-                        H2KE: Translating Hanja historical documents to
-                        understandable Korean and English
+                        H2KE: Translating Hanja Historical Documents to
+                        Contemporary Korean and English
                     </b>
                 </div>
                 <Router>
