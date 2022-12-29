@@ -139,6 +139,10 @@ export function IntroView(props) {
             }}
         >
             <div style={styles.introTextStyle}>
+                <b>H2KE</b> is presented at <a href="https://arxiv.org/abs/2205.10019">
+                Translating Hanja Historical Documents to Contemporary Korean and English</a>,
+                Proceedings of the 2022 Conference on Empirical Methods in
+                Natural Language Processing (EMNLP-Findings 2022). <br /> <br />
                 <b>The Annals of Joseon Dynasty (AJD)</b> contain the daily
                 records of the Kings of Joseon, the 500-year kingdom preceding
                 the modern nation of Korea. The Annals were originally written
@@ -156,7 +160,7 @@ export function IntroView(props) {
                 <b>
                     translates historical documents in Hanja to
                     more easily understandable Korean and to English
-                </b>. 
+                </b>.
                 Built on top of multilingual neural machine translation, H2KE
                 learns to translate a historical document written in Hanja, from
                 both a full dataset of outdated Korean translation and a small
