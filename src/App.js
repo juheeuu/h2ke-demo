@@ -49,21 +49,21 @@ function App() {
     return (
         <div>
             <header style={{ boxShadow: '0 4px 12px #080a2939' }}>
-                <div style={styles.topNavbar}>2022 EMNLP</div>
-                {/* <div style={styles.topNavbarContents}>
+                <div style={styles.topNavbar}><span style={{fontWeight: 700, paddingRight: '6px'}}>KAIST</span> Users & Information Lab</div>
+                <div style={styles.topNavbarContents}>
         <a
           href="./"
           style={styles.topNavbarlogoText}
         >
           <div>
-            2022 <br />  EMNLP
+            USERS & <br /> Information
           </div>
         </a>
 
             <div style={styles.topNavbarElemText}>
-              Code
+              <a href="https://arxiv.org/abs/2205.10019?context=cs.LG" style={{textDecoration: 'none', color: 'inherit'}}>Paper</a>
             </div>
-      </div>  */}
+      </div> 
             </header>
             <body style={styles.body}>
                 <div style={styles.title}>
@@ -155,7 +155,7 @@ const styles = {
     topNavbar: {
         backgroundColor: '#053886',
         width: '100%',
-        padding: '0px 36px',
+        padding: '2px 36px',
         display: 'flex',
         color: '#ffffff',
         fontWeight: 300,
