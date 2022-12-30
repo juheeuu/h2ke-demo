@@ -17,7 +17,7 @@ function Item(props) {
                     </tr>
                     {props.gt_nko ? (
                         <tr>
-                            <th> gt-nKo </th>
+                            <th> gt-cKo </th>
                             <td> {props.gt_nko} </td>
                         </tr>
                     ) : null}
@@ -29,7 +29,7 @@ function Item(props) {
                     ) : null}
                     {props.h2ke_nko ? (
                         <tr>
-                            <th> H2KE-nKo </th>
+                            <th> H2KE-cKo </th>
                             <td> {props.h2ke_nko} </td>
                         </tr>
                     ) : null}
@@ -139,28 +139,34 @@ export function IntroView(props) {
             }}
         >
             <div style={styles.introTextStyle}>
+                <b>H2KE</b> is presented at <a href="https://arxiv.org/abs/2205.10019">
+                Translating Hanja Historical Documents to Contemporary Korean and English</a>,
+                Proceedings of the 2022 Conference on Empirical Methods in
+                Natural Language Processing (EMNLP-Findings 2022). <br /> <br />
                 <b>The Annals of Joseon Dynasty (AJD)</b> contain the daily
                 records of the Kings of Joseon, the 500-year kingdom preceding
                 the modern nation of Korea. The Annals were originally written
                 in an archaic Korean writing system, <b>Hanja</b>, and
-                translated into Korean from 1968 to 1993. <br /> <br />
-                However, this translation was literal and contained many archaic
-                Korean words; thus a new expert translation effort began in
-                2012, completing the records of only one king in a decade. Also,
-                expert translators are working on an English translation, of
-                which only one king's records are available because of the high
-                cost and slow progress. <br /> <br />
-                Thus, we propose <b>H2KE</b>, the neural machine translation
-                model that{' '}
+                were translated into Korean from 1968 to 1993. <br /> <br />
+                However, the resulting translation was however too literal and
+                contained many archaic Korean words; thus, a new expert
+                translation effort began in 2012. Since then, the records of
+                only one king have been completed in a decade. In parallel,
+                expert translators are working on English translation, also at
+                a slow pace and produced only one king's records in English so
+                far. <br /> <br />
+                Thus, we propose <b>H2KE</b>, a neural machine translation
+                model, that{' '}
                 <b>
-                    translates Hanja historical documents to understandable
-                    Korean and English.
-                </b>
-                Based on the multilingual neural machine translation approach,
-                it translates the historical document written in Hanja, using
-                both the full dataset of outdated Korean translation and a small
-                dataset of recently translated Korean and English. <br /> <br />
-                We translate the entire AJD to <b>new Korean</b> and{' '}
+                    translates historical documents in Hanja to
+                    more easily understandable Korean and to English
+                </b>.
+                Built on top of multilingual neural machine translation, H2KE
+                learns to translate a historical document written in Hanja, from
+                both a full dataset of outdated Korean translation and a small
+                dataset of more recently translated contemporary Korean and
+                English. <br /> <br />
+                We translate the entire AJD to <b>contemporary Korean</b> and{' '}
                 <b>English</b> and openly release the translations to the public
                 in this page.
             </div>
@@ -206,7 +212,7 @@ export function IntroView(props) {
                     <tr>
                         <th style={{ textAlign: 'center' }}>
                             {' '}
-                            New <br /> Korean Translations <br /> (gt-nKo){' '}
+                            Contemporary <br /> Korean Translations <br /> (gt-cKo){' '}
                         </th>
                         <td>
                             청주목을 서원현으로 고쳤다.{' '}
