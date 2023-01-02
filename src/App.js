@@ -52,11 +52,11 @@ function App() {
                 <div style={styles.topNavbar}><span style={{fontWeight: 700, paddingRight: '6px'}}>KAIST</span> Users & Information Lab</div>
                 <div style={styles.topNavbarContents}>
         <a
-          href="./"
+          href="https://uilab.kr/"
           style={styles.topNavbarlogoText}
         >
           <div>
-            USERS & <br /> Information
+            USERS & <br /> INFORMATION
           </div>
         </a>
 
